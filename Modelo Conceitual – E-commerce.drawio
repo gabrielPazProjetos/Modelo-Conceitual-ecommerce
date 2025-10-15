@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0" version="28.2.7">
+  <diagram name="Página-1" id="E2x9n1M8fS_V6rEHYZNq">
+    <mxGraphModel dx="1034" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CzaWBoUBMRTZVnOwOU08-2" value="&lt;div&gt;Conta&lt;/div&gt;&lt;div&gt;- id_conta (PK)&lt;/div&gt;&lt;div&gt;- tipo_conta (PF ou PJ)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="420" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CzaWBoUBMRTZVnOwOU08-3" value="Produto&#xa;- id_produto (PK)&#xa;- nome&#xa;- descricao&#xa;- preco&#xa;- estoque" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="10" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="CzaWBoUBMRTZVnOwOU08-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="CzaWBoUBMRTZVnOwOU08-4" target="CzaWBoUBMRTZVnOwOU08-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CzaWBoUBMRTZVnOwOU08-4" value="Cliente_PF&#xa;- id_cliente_pf (PK)&#xa;- nome&#xa;- cpf&#xa;- data_nascimento&#xa;- id_conta (FK)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="280" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="CzaWBoUBMRTZVnOwOU08-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CzaWBoUBMRTZVnOwOU08-5" target="CzaWBoUBMRTZVnOwOU08-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CzaWBoUBMRTZVnOwOU08-5" value="Cliente_PJ&#xa;- id_cliente_pj (PK)&#xa;- razao_social&#xa;- cnpj&#xa;- nome_responsavel&#xa;- id_conta (FK)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="400" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="CzaWBoUBMRTZVnOwOU08-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CzaWBoUBMRTZVnOwOU08-6" target="CzaWBoUBMRTZVnOwOU08-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CzaWBoUBMRTZVnOwOU08-6" value="Pedido&#xa;- id_pedido (PK)&#xa;- data_pedido&#xa;- id_conta (FK)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CzaWBoUBMRTZVnOwOU08-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="CzaWBoUBMRTZVnOwOU08-7" target="CzaWBoUBMRTZVnOwOU08-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CzaWBoUBMRTZVnOwOU08-7" value="Item_Pedido&#xa;- id_item (PK)&#xa;- id_pedido (FK)&#xa;- id_produto (FK)&#xa;- quantidade&#xa;- preco_unitario" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="10" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="CzaWBoUBMRTZVnOwOU08-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CzaWBoUBMRTZVnOwOU08-8" target="CzaWBoUBMRTZVnOwOU08-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CzaWBoUBMRTZVnOwOU08-8" value="Item_Pedido&#xa;- id_item (PK)&#xa;- id_pedido (FK)&#xa;- id_produto (FK)&#xa;- quantidade&#xa;- preco_unitario" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="50" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="CzaWBoUBMRTZVnOwOU08-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CzaWBoUBMRTZVnOwOU08-9" target="CzaWBoUBMRTZVnOwOU08-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CzaWBoUBMRTZVnOwOU08-9" value="Pagamento&#xa;- id_pagamento (PK)&#xa;- id_conta (FK)&#xa;- tipo_pagamento&#xa;- detalhes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="190" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CzaWBoUBMRTZVnOwOU08-10" value="Entrega&#xa;- id_entrega (PK)&#xa;- id_pedido (FK)&#xa;- status&#xa;- codigo_rastreio" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="230" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="CzaWBoUBMRTZVnOwOU08-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="CzaWBoUBMRTZVnOwOU08-9" target="CzaWBoUBMRTZVnOwOU08-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CzaWBoUBMRTZVnOwOU08-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.698;entryY=0.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="CzaWBoUBMRTZVnOwOU08-6" target="CzaWBoUBMRTZVnOwOU08-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CzaWBoUBMRTZVnOwOU08-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.813;entryY=0.037;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="CzaWBoUBMRTZVnOwOU08-3" target="CzaWBoUBMRTZVnOwOU08-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
