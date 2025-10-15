@@ -29,4 +29,4 @@ Refinar o modelo inicial com os seguintes requisitos:
 
 ##  Diagrama
 
-O diagrama conceitual foi criado com a ferramenta [diagrams.net](https://app.diagrams.net) e está disponível neste repositório no arquivo:
+O diagrama conceitual foi criado com a ferramenta [diagrams.net]
